@@ -238,6 +238,39 @@ p {
   margin-right: 30px;
 }
 
+.section-list-item::before{
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  background-position: center;
+}
+/* ================= icon list ===================== */
+.section-list-item.icon-antenna::before{
+  background-image: url(../images/antenna.svg);
+  
+}
+
+.section-list-item.icon-clock::before{
+  background-image: url(../images/clock.svg);
+  
+}
+
+.section-list-item.icon-diagram::before{
+  background-image: url(../images/diagram.svg);
+  
+}
+
+.section-list-item.icon-astronaut::before{
+  background-image: url(../images/astronaut.svg);
+  
+}
+/* =============================================== */
+
 .section-title-item {
   text-align: left;
   margin-bottom: 10px;
