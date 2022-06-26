@@ -215,7 +215,7 @@ p {
     to right, 
     rgba(47, 48, 58, 0.4), 
     rgba(47, 48, 58, 0.4)),
-    url(../images/hero.jpg);
+    url(../images/studio/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -234,40 +234,31 @@ p {
   display: flex;
 }
 
-.section-list > .section-list-item:not(:last-child) {
-  margin-right: 30px;
-}
+
 
 .section-list-item::before{
-  display: block;
+  display: flex;
   content: "";
-  height: 120px;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
   background: #F5F4FA;
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-size: 70px 70px;
-  background-position: center;
-}
-/* ================= icon list ===================== */
-.section-list-item.icon-antenna::before{
-  background-image: url(../images/antenna.svg);
-  
+ 
 }
 
-.section-list-item.icon-clock::before{
-  background-image: url(../images/clock.svg);
-  
+.section-list > .section-list-item:not(:last-child) {
+  margin-right: 30px;
 }
-
-.section-list-item.icon-diagram::before{
-  background-image: url(../images/diagram.svg);
-  
-}
-
-.section-list-item.icon-astronaut::before{
-  background-image: url(../images/astronaut.svg);
-  
+.fetchers-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 /* =============================================== */
 
@@ -320,6 +311,7 @@ p {
 }
 
 .team-card {
+  
   background-color: var(--main-bcg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -336,12 +328,43 @@ p {
 }
 
 .team-text {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.2;
 }
 .card-content {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.logo-brand{
+  display: flex;
+}
+
+.logo-brand-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  
+}
+
+.logo-brand>.logo-brand-item:not(:last-child){
+  margin-right: 30px;
+}
+
+.brand-icon{
+  fill:#AFB1B8;
+  
+}
+
+.logo-brand-item:hover, .brand-icon:hover,
+.logo-brand-item:focus, .brand-icon:focus{
+  fill:#2196F3;
+  border-color:#2196F3;
 }
 
 /* *==================================================* */
