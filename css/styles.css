@@ -112,6 +112,12 @@ p {
   margin-right: 50px;
 }
 
+.contact-icon{
+  margin-right: 10px;
+  align-items:center;
+  justify-content: center;
+  fill: #757575;
+}
 .header-link {
   color: var(--main-txt-color);
 
@@ -130,6 +136,7 @@ p {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--brand-accent-color);
+  fill: var(--brand-accent-color);
 }
 
 .site-nav .link.current {
