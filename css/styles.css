@@ -188,7 +188,11 @@ p {
 .site-nav-item:not(:last-child) {
   margin-right: 50px;
 }
-
+.icon             
+{
+  display: flex;
+  align-items: center;
+}
 .header-contacts-link{
   color: var(--main-txt-color);
   fill: var(--icon-static-color);
@@ -609,5 +613,16 @@ p {
 
 .portfolio-title-item {
   margin-bottom: 4px;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus{
+  background: var(--main-bcg-color);
+  border: 1px solid var(--main-bcg-color);
+  box-shadow: 0px 1px 1px 
+  rgba(0, 0, 0, 0.12), 0px 4px 4px 
+  rgba(0, 0, 0, 0.06), 1px 4px 6px 
+  rgba(0, 0, 0, 0.16);
+
 }
 /* ********************************************************************************** */
